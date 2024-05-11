@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${titulo}"></title>
+</head>
+<body>
+    <h1 th:text="${titulo}"></h1>
+    <div>
+        <h2>Parametros recibidos por query: </h2>
+        El parametro es: <span style="color: blue;" th:text="${parametro}"></span>
+        El otro parametro es: <span style="color: blue;" th:text="${otroValor}"></span>
+    </div>
+
+    <div>
+        <h2>Parametros recibidos por path: </h2>
+        El jugador es: <span style="color: blue;" th:text="${jugador.getNombre()}"></span>
+        (<span style="color: blue;" th:text="${jugador.getNumero()}"></span>)
+    </div>
+</body>
+</html>
